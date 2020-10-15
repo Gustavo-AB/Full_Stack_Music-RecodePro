@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: 100% 17%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    
+}
+.geral{
+    margin: 80px 0 0 0;
+}
+
+/**/
+.fdp {
+    color: gray;
+}
+/**/
+.menu {
+    background-color: rgb(214, 2, 2);
+    width: 100%;
+    margin: 0 ;
+    padding: 0 ;
+    
+}
+/**/
+
+header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    padding-bottom: 0px ;
+    text-align: center;
+    background-color: rgb(214, 2, 2);  
+    font-size: 20px;
+    text-align: center;  
+    border-bottom: 10px solid brown;
+}
+
+header li {
+    display: inline-block;
+    padding: 20px 50px;
+}
+header a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 0 0px;
+}
+
+.pgin  {
+    font-family: sans-serif;
+    margin: 0 0 0 10px;
+    float: left;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 25px;
+}
+/**/
+
+#p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    padding: 10px 0;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.apres{
+    margin: -19px 0 0 0;
+    height: 300px;
+}
+#itensdomenu{
+    margin: 5px 0  0 20px;
+    float: right;
+}
+
+#itensdomenu li{
+    font-size: 15px;
+}
+.textolojas{
+    background-color: brown;
+    padding: 15px 0;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+
+.espaçamento{
+    margin-top: -52px;
+    background-color: brown;
+    height: 100px;
+}
+.espaçamento p{
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+}
+
+
+.texto3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 47px;
+    padding:0px 0px 0 20px;
+    float: left;
+}
+
+
+
+
+.texto2{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-top: -100px;
+    padding: 0px 20px 0px 0px;
+    float: right;
+}
+
+/**/
+.texto1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    padding: 20px 0 0 20px;
+    float: left;
+    font-size: 70px;
+    text-align: center;
+}
+/**/
+.lojas{
+    padding-top: 0px;
+}
+
+.lojas img{
+    margin-left: 150px;
+    margin-bottom: -30px;
+    width: 80%;
+    height: 400px;
+}
+
+
+
+.logos{
+    align-items: center;
+    display: inline-block;
+    margin: 30px 200px ;
+    padding: 5px 50px 0 50px;
+}
+.logos img{
+    width: 100px;
+}
+.logos td{
+    padding: 0 100px;
+}
+
+textarea {
+    height: 100px;   
+}
+/**/
+.tabfinal {
+    background-color:  rgb(255, 255, 255);
+}
+/**/
+.copy {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+
+}
+/**/
+.fdp {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 2px;
+}
+/**/
+.imfdp {
+    border: 5px solid  rgb(255, 255, 255);
+}
+/**/
+.categorias {
+    margin: 15px 0 0 30px;
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.categorias h3{
+    text-align: center;
+}
+/**/
+.categorias ul li{
+    margin-top: 10px;
+    margin-left: 4px;
+    list-style-position: inside;
+}
+/**/
+.inputtxa {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    height: 100px;
+}
+/**/
+
+
+
+.box{
+    display: inline-block;
+    margin: 0px 0;
+    padding: 50px 20px ;
+}
+.box2{
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px 0 10px;
+    padding: 0 5px 0 5px;
+}
+
+.box2 a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.preconovo{
+    color: red;
+}
+.botao1{
+    background-color: whitesmoke;
+    border: 1px solid black;
+    width: 50%;
+    height: 30px;
+}
+
+.botao2{
+    background-color: whitesmoke;
+    border: 1px solid black;
+    width: 50%;
+    height: 30px;
+}
+
+.botao3{
+    background-color: whitesmoke;
+    border: 1px solid black;
+    width: 50%;
+    height: 30px;
+}
+
+.produtos{
+    text-align: center;
+    margin: -50px 10px 0px 262px;
+    padding: 20px;
+}
+.nossaslojas{
+    margin: 0px;
+    padding: 0 50px 0 100px;
+}
+
+.divl{
+    width: 150px;
+    height: 250px;
+    text-align: center;
+    margin: 5px 22px;
+    padding: 10px 110px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 10px;
+}
+.ncontatos{
+    color: gray;
+    margin: 20px;
+    padding: 20px;
+}
+.divc{
+    display: inline-block;
+    text-align: center;
+    margin: 2px 50px;
+    padding: 2px 180px;
+
+}
+
+.form{
+    margin: 0 450px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    border-top: 5px solid brown;
+    border-left: 5px solid brown;
+    border-right: 5px solid brown;
+    border-bottom: 5px solid brown;
+    height: 500px;
+}
+
+#nome{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#msg{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box3{
+    padding: 10px 0;
+}
+
+
+.box4{
+    padding: 100px 0;
+}
+
+footer{
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+}
