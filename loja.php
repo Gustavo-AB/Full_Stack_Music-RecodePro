@@ -7,24 +7,10 @@
     </head>
     <body>
         <!--Menu-->
-        <section class="geral">
-            <header>
-                <div class="menu">
-                    <nav>
-                        <div class="pgin" >
-                            <ul>
-                                <li><a href="index.php">FULL STACK MUSIC</a></li>
-                            </ul>
-                        </div>
-                        <ul id="itensdomenu">
-                            <li><a href="produtos.php">PRODUTOS</a></li>
-                            <li><a href="loja.php">NOSSAS LOJAS</a></li>
-                            <li><a href="contatos.php">FALE CONOSCO</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-            <!--Fim do Menu-->
+        <?php
+            include('menu.html');
+        ?>
+        <!--Fim do Menu-->
             <section>
                 <div class="nossaslojas">
                     <div class="divl">
