@@ -7,28 +7,10 @@
     </head>
     <body background="./imagens/banner1.jpg">
         <!--Menu-->
-        <section class="geral">
-            <header>
-                <div class="menu">
-                    <nav>
-                        <div class="pgin">                       
-                            <ul>
-                                <li>
-                                    <a class="pgin" href="index.html">FULL STACK MUSIC</a>
-                                </li>
-                            </ul>
-                        </div>  
-                        <div id="itensdomenu">
-                            <ul>
-                                <li><a href="produtos.html">PRODUTOS</a></li>
-                                <li><a href="loja.html">NOSSAS LOJAS</a></li>
-                                <li><a href="contatos.html">FALE CONOSCO</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </header>
-            <!--Fim do Menu-->
+        <?php
+            include('menu.html');
+        ?>
+        <!--Fim do Menu-->
 
             <div  class="apres">
                 <section >

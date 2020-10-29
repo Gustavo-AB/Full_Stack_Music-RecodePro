@@ -2,7 +2,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Nossas Lojas</title>  
+        <title>Contato</title>  
         <link href="./css/estilos.css" rel="stylesheet" >
     </head>
     <body>
@@ -13,49 +13,38 @@
                     <nav>
                         <div class="pgin" >
                             <ul>
-                                <li><a href="index.html">FULL STACK MUSIC</a></li>
+                                <li><a href="index.php">FULL STACK MUSIC</a></li>
                             </ul>
                         </div>
                         <ul id="itensdomenu">
-                            <li><a href="produtos.html">PRODUTOS</a></li>
-                            <li><a href="loja.html">NOSSAS LOJAS</a></li>
-                            <li><a href="contatos.html">FALE CONOSCO</a></li>
+                            <li><a href="produtos.php">PRODUTOS</a></li>
+                            <li><a href="loja.php">NOSSAS LOJAS</a></li>
+                            <li><a href="contatos.php">FALE CONOSCO</a></li>
                         </ul>
                     </nav>
                 </div>
             </header>
             <!--Fim do Menu-->
-            <section>
-                <div class="nossaslojas">
-                    <div class="divl">
-                        <h3>Rio de Janeiro</h3>
-                        <p>Avenida Presidente Vargas, 500</p>
-                        <p>10º Andar</p>
-                        <p>Centro</p>
-                        <p>(21) 2222-2222</p>
-                    </div>
-
-                    <div class="divl">
-                        <h3>São Paulo</h3>
-                        <p>Avenida Paulista, 985</p>
-                        <p>3º Andar</p>
-                        <p>Jardins</p>
-                        <p>(11)3333-3333</p>
-                    </div>
-                    
-                    <div class="divl">
-                        <h3>Santa Catarina</h3>
-                        <p>Rua Major Avila, 370</p>
-                        <p>Vila Mariana</p>
-                        <p>(47)5555-5555</p>
-                        <br><br>
-                    </div>
-                </div>
-            </section>
             <hr>
+            <br><br><br><br><br><br>
+            <section class="form">
+                <form>
+                    <div class="box3">
+                        <label id="nome"><strong>Nome</label></strong><br><br>
+                        <input type="text" class="input"><br><br><br><br>
+                    </div>
+                    <div class="box4">
+                        <label id="msg"><strong>Mensagem</strong></label><br><br>
+                        <textarea  class="inputtxa">Deixe sua mensagem para nós aqui!</textarea>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </section>
+            
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <hr>
             <div class="tabfinal"> 
+             
                 <footer class="fdp" >Formas de pagamento<br><br>
                     <img class="imfdp" src="./imagens/fdp.jpg" width="25%" alt="Formas de pagamento"><br>
                     <p class="copy">&copy; Recode Pro</p>
