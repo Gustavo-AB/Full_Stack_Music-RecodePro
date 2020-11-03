@@ -1,15 +1,5 @@
 <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "flmusic";
-
-    $conn = mysqli_connect($servername, $username, $password, $database);
-
-    if(!$conn){
-        die("A conexão as BD falhou " . mysqli_connect_error());
-    }
-
+    require_once('conexao.php');
 ?>
 
 
