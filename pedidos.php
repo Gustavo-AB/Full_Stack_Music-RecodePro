@@ -83,6 +83,8 @@
                     </div>
 
                     <input class="btn btn-lg btn-primary" type="submit" value="Finalizar Pedido">
+                    <button class="btn btn-primary btn-lg"><a class="text-white" href="index.php">Voltar a Navegação</a></button>
+
 
                 </form>
             </div>

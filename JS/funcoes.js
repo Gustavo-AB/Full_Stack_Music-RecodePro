@@ -1,7 +1,7 @@
 function exibir_categoria(categoria){
     /*alert(categoria);*/
     
-    let elementos = document.getElementsByClassName('box');
+    let elementos = document.getElementsByClassName('box_produtos');
     for(let i=0; i<elementos.length; i++){
         console.log(elementos[i].id);
         if(categoria==elementos[i].id){
@@ -13,7 +13,7 @@ function exibir_categoria(categoria){
     }
 }
 let exibir_todos = () => {
-    let elementos = document.getElementsByClassName('box');
+    let elementos = document.getElementsByClassName('box_produtos');
     for(let i=0; i<elementos.length; i++){  
             elementos[i].style = "display: inline-block";
     }

@@ -1,65 +1,38 @@
-<?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "flmusic";
-
-    $conn = mysqli_connect($servername, $username, $password, $database);
-
-    if(!$conn){
-        die("A conexão as BD falhou " . mysqli_connect_error());
-    }
-
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Contato</title>  
-        <link href="./css/estilos.css" rel="stylesheet" >
-    </head>
-    <body>
-        <!--Menu-->
-        <?php
-            include('menu.html');
-        ?>
-        <!--Fim do Menu-->
-            <hr>
-            <br><br><br><br><br><br>
-            <section class="form">
-                <form>
-                    <div class="box3">
-                        <label id="nome"><strong>Nome</label></strong><br><br>
-                        <input type="text" class="input"><br><br><br><br>
-                    </div>
-                    <div class="box4">
-                        <label id="msg"><strong>Mensagem</strong></label><br><br>
-                        <textarea  class="inputtxa">Deixe sua mensagem para nós aqui!</textarea>
-                        <button type="submit">Enviar</button>
-                    </div>
-                </form>
-            </section>
-            
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <hr>
-            <div class="tabfinal"> 
-             
-                <footer class="fdp" >Formas de pagamento<br><br>
-                    <img class="imfdp" src="./imagens/fdp.jpg" width="25%" alt="Formas de pagamento"><br>
-                    <p class="copy">&copy; Recode Pro</p>
-                </footer>
-                <section class="ncontatos">
-                    <div class="divc">
-                        <img src="./imagens/email.jpg" width="40px"><br>
-                        <font face="Arial" size="4">fullstackmusic@gmail.com</font>
-                    </div>
-                    <div class="divc">
-                        <img src="./imagens/zap.jpg" width="40px"><br>
-                        <font face="Arial" size="4">(11)99999-9999</font>
-                    </div>
-            </section>
-            <div>
-        </section>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.js" integrity="sha512-1lagjLfnC1I0iqH9plHYIUq3vDMfjhZsLy9elfK89RBcpcRcx4l+kRJBSnHh2Mh6kLxRHoObD1M5UTUbgFy6nA==" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+
+    <script src="./JS/funcoes.js"></script>
+
+    
+
+
+</head>
+<body>
+    <?php require_once('menu.html');?>
+    <div class="container">
+        <div class="jumbotron">
+            <form class="form" action="#">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input class="form-control" type="text" name="nome" id="nome">
+                </div>
+                <div class="form-group">
+                    <label for="msg">Deixe Aqui Sua Mensagem</label>
+                    <textarea class="form-control" name="msg" id="msg" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+
+</body>
 </html>

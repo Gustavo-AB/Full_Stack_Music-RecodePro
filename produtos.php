@@ -1,101 +1,75 @@
 <?php
-    require_once('conexao.php');
+  require_once('conexao.php');
 ?>
-
-
-
-
 
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Produtos-Full Stack Eletro</title>
-    <link href="./css/estilos.css" rel="stylesheet">
-    <script src="./JavaScript/funcoes.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produtos</title>
+
+  <link rel="stylesheet" href="./css/produtos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.js" integrity="sha512-1lagjLfnC1I0iqH9plHYIUq3vDMfjhZsLy9elfK89RBcpcRcx4l+kRJBSnHh2Mh6kLxRHoObD1M5UTUbgFy6nA==" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./bootstrap-4.5.3-dist/css/bootstrap.min.css">
+  <script src="./bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+
+  <script src="./JS/funcoes.js"></script>
+
+
 </head>
 
-<body>
-    <!--Menu-->
-    <?php
-            include('menu.html');
-        ?>
-    <!--Fim do Menu-->
-    <hr>
-    <section class="categorias">
-        <h3>Categorias</h3>
+<body background="./imagens/fundo_produtos.jpg">
+  <?php
+    require_once('menu.html');
+  ?>
+
+  <div class="container">
+    <div class="categoria">
+      <nav>
         <ul>
-            <li onclick="exibir_todos()">Todos (12)</li>
-            <li onclick="exibir_categoria('guitarra')">Guitarras (3)</li>
-            <li onclick="exibir_categoria('violao')">Violões (2)</li>
-            <li onclick="exibir_categoria('baixo')">Contra Baixos (3)</li>
-            <li onclick="exibir_categoria('piano')">Pianos Digitais (2)</li>
-            <li onclick="exibir_categoria('bateria')">Baterias Acusticas (2)</li>
+          <li>CATEGORIAS</li>
+          <li onclick="exibir_todos()">TODOS (12)</li>
+          <li onclick="exibir_categoria('guitarra')">GUITARRAS (3)</li>
+          <li onclick="exibir_categoria('violao')">VIOLÕES (2)</li>
+          <li onclick="exibir_categoria('baixo')">CONTRA BAIXOS (3)</li>
+          <li onclick="exibir_categoria('piano')">PIANOS DIGITAIS (2)</li>
+          <li onclick="exibir_categoria('bateria')">BATERIAS ACUSTICAS (2)</li>
         </ul>
-    </section>
+      </nav>
+    </div>
+  
     <!--categorias-->
 
-    <section class="produtos">
-        <?php
-            $sql = "select * from produtos";
-            $result = $conn->query($sql);
-        
-            if($result->num_rows > 0){
-                while($rows = $result->fetch_assoc()){
-        ?>
-                    <div class="box" id="<?php echo $rows["categoria"];?>">
-                        <div class="box2">
-                            <img src="<?php echo $rows["imagem"];?>" width="200px" onclick="destaque(this)"><br>
-                            <p onclick="confirmar()"><?php echo $rows["descricao"];?></p>
-                            <p><strike>R$ <?php echo $rows["preco"];?></strike></p>
-                            <p class="preconovo">R$ <?php echo $rows["precoantigo"];?></p>
-                            <button class="botao1" onclick="alerta()">COMPRAR</button><br>
-                            <button class="botao1" onclick="alerta()">DETALHES</button><br>
-                            <button class="botao1" onclick="alerta()">CARRINHO</button><br>
-                        </div>
-                    </div>
+    <section>
+      <?php 
+        $sql = "select * from produtos";
+        $result = $conn->query($sql);
 
-
-
-
-
-
-
-        <?php
-                }
-            }
-            else{
-                echo "Nenhum produto cadastrado!";
-            }
-        ?>
-
-
-        
-        <!--box-->
-
-       
+        if($result->num_rows > 0){
+          while($rows = $result->fetch_assoc()){
+      ?>
+      <div class="box_produtos" id="<?php echo $rows["categoria"];?>">
+        <div>
+          <img src="<?php echo $rows["imagem"];?>" onclick="destaque(this)" width="200px"><br>
+          <p><?php echo $rows["descricao"];?></p>
+          <p style="color: red"><strike>R$<?php echo $rows["preco"];?></strike></p>
+          <p>R$<?php echo $rows["precoantigo"];?></p>
+          <button><a href="pedidos.php">COMPRAR</a></button>
+          <button>DETALHES</button>
+          <button>CARRINHO</button>
+          
+        </div>
+      </div>
+      <?php
+          }
+        } else{
+          echo "Nenhum produto cadastrado!";
+        }
+      ?>    
     </section>
-    <hr>
-    <div class="tabfinal">
-
-        <footer class="fdp">Formas de pagamento<br><br>
-            <img class="imfdp" src="./imagens/fdp.jpg" width="25%" alt="Formas de pagamento"><br>
-            <p class="copy">&copy; Recode Pro</p>
-
-        </footer>
-        <section class="ncontatos">
-            <div class="divc">
-                <img src="./imagens/email.jpg" width="40px"><br>
-                <font face="Arial" size="4">fullstackmusic@gmail.com</font>
-            </div>
-            <div class="divc">
-                <img src="./imagens/zap.jpg" width="40px"><br>
-                <font face="Arial" size="4">(11)99999-9999</font>
-            </div>
-        </section>
-    <div>
-            
+  </div>
+    
 </body>
-
-</html>
